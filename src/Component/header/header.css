@@ -1,0 +1,74 @@
+.Header {
+  min-height: 100vh;
+  background: url('../../image-for-exercise/others/static-image.jpg') no-repeat
+    center/cover;
+  position: relative;
+  z-index: -1;
+}
+/* replace #content by .container */
+.Header .container {
+  max-width: 600px;
+  color: rgba(255, 255, 255, 0.892);
+  position: absolute;
+  top: 30%;
+  background-color: transparent;
+  padding: 0 1em;
+  text-align: unset;
+  background-color: transparent;
+  /* 
+  padding: 6em 6em;
+  text-align: center;
+  background-color: var(--clr-grey-10); */
+}
+
+.Header .container p {
+  font-size: medium;
+  font-weight: bold;
+}
+
+.Header .container p {
+  font-size: medium;
+  font-weight: bold;
+}
+
+.Header .container > p:nth-child(1),
+p:nth-child(2) {
+  line-height: 1.5em;
+}
+
+.Header .container p:first-child {
+  word-spacing: 0.2em;
+  font-size: 1.2em;
+  font-weight: 1em;
+}
+
+.Header .container p:nth-child(2) {
+  word-spacing: 0.2em;
+  font-size: 3.2em;
+  font-weight: 500;
+}
+
+.Header button {
+  padding: 0.8em 1.3em;
+  background-color: var(--clr-primary-6);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 0.9em;
+  font-weight: 550;
+  margin-top: 2em;
+  word-spacing: 0.2em;
+}
+
+/*----------------responsive---------------*/
+
+@media screen and (max-width: 990px) {
+  .Header .container {
+    top: 20%;
+  }
+  .Header .container p:nth-child(2) {
+    word-spacing: 0.2em;
+    font-size: 2em;
+    font-weight: 500;
+  }
+}

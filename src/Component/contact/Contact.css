@@ -1,0 +1,119 @@
+#contact {
+  background-color: var(--clr-grey-10);
+  height: auto;
+}
+
+#contact .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  margin: 0 auto;
+  padding: 1em 2em;
+}
+
+#contact .content .image {
+  width: 80%;
+  height: 100%;
+  padding-right: 40px;
+}
+
+#contact .content .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+#contact .content .form {
+  width: 100%;
+  height: 70vh;
+  position: relative;
+  background-color: white;
+}
+#contact > div form {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact .form span {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: -10px;
+  left: 40%;
+  background-color: white;
+  border-radius: 50%;
+  padding: 0.8em;
+  z-index: 99;
+}
+
+#contact .form span img {
+  width: 100%;
+  height: 100%;
+  object-fit: center;
+}
+
+#contact .form form label {
+  font-size: 1.5em;
+  font-weight: 500;
+  color: black;
+  margin-top: 2em;
+}
+
+#contact .form form input {
+  padding: 0.8em 0.8em;
+  border: none;
+  box-shadow: 2px 3px 5px 5px var(--clr-grey-10);
+  margin: 1em 0;
+  border-radius: 5px;
+  font-size: medium;
+}
+
+#contact .form form textarea {
+  width: 90%;
+  border-radius: 6px;
+  padding: 1em 1em;
+  font-size: medium;
+}
+
+#contact .form form button {
+  width: 90%;
+  margin: 1em auto;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 0.5em 0;
+}
+
+@media screen and (max-width: 990px) {
+  #contact .content {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+  }
+
+  #contact .content .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 10 auto;
+    padding: 0 2em;
+  }
+
+  #contact .content .image img {
+    width: 90vw;
+    height: 100%;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    display: block;
+  }
+}

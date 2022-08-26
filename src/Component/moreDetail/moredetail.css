@@ -1,0 +1,199 @@
+#more-detail {
+  padding: 6em 7em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10%;
+  background-color: var(--clr-white);
+  width: 100%;
+}
+
+#doing {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1em 2em;
+  width: 100%;
+}
+
+#more-detail .describe {
+  flex: 1;
+  line-height: 1.5em;
+}
+#more-detail #image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.icon {
+  width: 99%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1em 0;
+  margin: 0 auto;
+}
+
+#introduce {
+  padding: 1.5em 1em;
+  flex: 1;
+  padding-bottom: 0;
+}
+#doing #introduce .title {
+  display: flex;
+  padding: 0.5em 0;
+  height: 25%;
+}
+#doing .describe {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 1em 0;
+  font-weight: 520;
+  font-size: medium;
+  max-width: 90%;
+}
+#doing #underline_intro {
+  border: 2px solid var(--clr-primary-6);
+}
+
+#doing #introduce #content {
+  margin-left: 10px;
+}
+
+#doing #content p {
+  font-size: 1.5em;
+  color: black;
+  word-spacing: 0.3em;
+}
+
+#doing #content p:first-child {
+  font-size: medium;
+  font-weight: 300;
+}
+#more-detail #image {
+  width: 100%;
+}
+
+#more-detail #image img {
+  width: 100%;
+  height: 100%;
+}
+
+.icon {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 1.5em;
+}
+
+.icon span {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--clr-primary-5);
+  font-weight: bold;
+}
+
+.icon span img {
+  padding: 0 0.5em;
+}
+
+#more-detail #doing {
+  background-color: var(--clr-grey-10);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 1em;
+}
+#more-detail #introduce {
+  padding: 1.5em 1em;
+  flex: 1;
+  padding-bottom: 0;
+}
+#more-detail #doing #introduce .title {
+  display: flex;
+  padding: 0.5em 0;
+  height: 25%;
+}
+#more-detail #doing .describe {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 1em 0;
+  font-weight: 520;
+  font-size: medium;
+  max-width: 90%;
+}
+#more-detail #doing #underline_intro {
+  border: 2px solid var(--clr-primary-6);
+}
+
+#more-detail #doing #introduce #content {
+  margin-left: 10px;
+}
+
+#more-detail #doing #content p {
+  font-size: 1.5em;
+  color: black;
+  word-spacing: 0.3em;
+}
+
+#more-detail #doing #content p:first-child {
+  font-size: medium;
+  font-weight: 300;
+}
+#more-detail #image {
+  width: 100%;
+}
+
+#more-detail #image img {
+  width: 100%;
+  height: 100%;
+}
+
+#more-detail .icon {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 1.5em;
+}
+
+#more-detail .icon span {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--clr-primary-5);
+  font-weight: bold;
+}
+
+#more-detail .icon span img {
+  padding: 0 0.5em;
+}
+
+@media screen and (max-width: 990px) {
+  #more-detail {
+    display: block;
+    padding: 1em 0em;
+  }
+  #more-detail #doing,
+  #more-detail #image {
+    margin: 2em 0;
+    padding: 0;
+  }
+
+  #more-detail .icon {
+    flex-direction: column;
+    align-items: unset;
+    width: 100%;
+    text-align: left;
+  }
+
+  #more-detail .icon span {
+    padding: 0.5em 0;
+    width: fit-content;
+    float: left;
+  }
+}

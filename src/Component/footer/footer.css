@@ -1,0 +1,107 @@
+#footer {
+  background-color: var(--clr-white);
+  padding-right: 1em;
+  padding-left: 1em;
+}
+#footer > div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+#footer article {
+  margin-right: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#footer article h3 {
+  color: black;
+  padding: 0.8em 0;
+}
+
+#footer article p {
+  line-height: 1.5em;
+  font-size: medium;
+}
+#footer article {
+  text-align: left;
+}
+.about-us div {
+  display: flex;
+  align-items: center;
+}
+#footer article .about-us {
+  margin: 1em 0;
+}
+.about-us div {
+  width: 100%;
+  justify-content: space-evenly;
+}
+#footer article .about-us span {
+  margin: 1em 0.5em;
+  margin-left: 0;
+}
+
+#footer article .image {
+  display: flex;
+  align-items: center;
+}
+
+#footer article .image img {
+  width: 60px;
+  height: 60px;
+  margin: 10px 10px;
+}
+
+#footer article .image div {
+  width: 70%;
+}
+
+#footer article .image .time {
+  color: var(--clr-primary-6);
+  font-weight: 600;
+}
+#footer .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+#footer .contact div p {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#footer .contact div p span {
+  padding: 0.3em 0.5em;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 990px) {
+  .about-us div {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  #footer article {
+    margin: 1em 0;
+  }
+}
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletter form input {
+  padding: 1em 1em;
+  border: none;
+  box-shadow: 2px 2px 4px 4px var(--clr-grey-10);
+}
+
+.newsletter form button {
+  width: 100px;
+  cursor: pointer;
+  margin: 20px 0;
+}

@@ -1,0 +1,51 @@
+#information {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 100px;
+  background-color: white;
+}
+
+#information .image {
+  width: 100%;
+}
+
+#information .image img {
+  width: 100%;
+  height: 100%;
+}
+
+#information .title {
+  width: 100%;
+  padding: 1em;
+  text-align: left;
+}
+
+#information .title h1 {
+  color: black;
+  font-weight: 500;
+  font-size: 1.5em;
+  padding: 1em 0;
+}
+
+#information .content p {
+  text-align: left;
+  max-width: 500px;
+  line-height: 1.5em;
+  font-weight: 500;
+  font-size: 1.1em;
+}
+
+#information .content button {
+  background-color: transparent;
+  color: var(--clr-primary-6);
+  font-weight: 500;
+  float: left;
+}
+
+@media screen and (max-width: 990px), (max-width: 900px) {
+  #information {
+    grid-template-columns: repeat(auto-fit, minmax(90%, 1fr));
+    gap: 100px;
+    background-color: white;
+  }
+}

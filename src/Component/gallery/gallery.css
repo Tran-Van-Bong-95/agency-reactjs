@@ -1,0 +1,127 @@
+#gallery {
+  background-color: white;
+}
+
+#gallery .choices {
+  width: 100%;
+  margin: 0 auto;
+  color: hsl(21, 81%, 29%);
+}
+
+#gallery .choices button {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  background-color: transparent;
+  border-radius: 0;
+  color: hsl(21, 87%, 37%);
+  padding: 1em 1em;
+  text-transform: uppercase;
+  border-left: none;
+  border-right: none;
+  margin: 1em 1em;
+  transition: var(--transition);
+}
+
+#gallery .main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  padding: 1em 0;
+  transition: var(--transition);
+}
+
+#gallery .main article {
+  width: 30%;
+  cursor: pointer;
+  position: relative;
+  transition: var(--transition);
+  top: 0;
+}
+
+#gallery .main article .image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: var(--transition);
+}
+
+#gallery .main article .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: center;
+}
+
+#gallery .main article .image button {
+  text-align: center;
+  vertical-align: middle;
+  background-color: white;
+  border-radius: 5px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  padding: 5px 5px;
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#gallery .main article .image:hover > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: var(--transition);
+}
+
+#fixedContain {
+  width: 100vw;
+  position: fixed;
+  background-color: rgba(169, 165, 165, 0.233);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 9999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.styleforSlider {
+  width: 60vw;
+  height: 100%;
+}
+
+#fixedContain > div > div {
+  display: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translateX(-20%, -35%);
+}
+
+@media screen and (max-width: 990px) {
+  #gallery .main {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #gallery .main article {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #gallery .choices button {
+    border: unset;
+  }
+
+  .styleforSlider article img {
+    display: block;
+    width: 130%;
+  }
+}
+
+@media screen and (max-width: 990px) {
+}

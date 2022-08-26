@@ -1,0 +1,48 @@
+#feature {
+  background-color: white;
+}
+#feature .main-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  padding: 3em 0;
+  max-width: 90%;
+}
+
+#feature .main-content article .title h5 {
+  text-align: left;
+  color: black;
+  font-size: larger;
+  font-weight: 500;
+}
+
+#feature .main-content article {
+  padding: 1em 0;
+}
+
+#feature .main-content article .content {
+  display: flex;
+}
+
+#feature .main-content article .content .image {
+  margin-right: 20px;
+}
+
+#feature .main-content article .describe p {
+  text-align: left;
+  width: 100%;
+}
+
+@media screen and (max-width: 990px), (max-width: 900px) {
+  #feature .main-content {
+    flex-direction: column;
+  }
+
+  #feature .main-content .image {
+    width: 100%;
+  }
+
+  #feature .main-content .image img {
+    width: 100%;
+  }
+}

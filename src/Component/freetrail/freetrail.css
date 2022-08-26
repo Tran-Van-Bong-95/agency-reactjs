@@ -1,0 +1,19 @@
+#free-trail {
+  background: url('../../image-for-exercise/others/1920x700x2.jpg') center/cover
+    no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#free-trail .content h1 {
+  padding: 1em 0;
+}
+
+#free-trail .content {
+  max-width: 600px;
+  font-size: medium;
+  color: rgba(255, 255, 255, 0.718);
+  padding: 5em 0;
+  font-weight: 600;
+}

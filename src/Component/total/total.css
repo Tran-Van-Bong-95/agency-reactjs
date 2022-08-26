@@ -1,0 +1,44 @@
+#total {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background: url('../../image-for-exercise/others/1920x700x1.jpg') center/cover
+    no-repeat;
+}
+
+#total article {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+#total article > span:nth-last-child(odd) {
+  text-transform: uppercase;
+  font-size: larger;
+  font-weight: 500;
+  color: white;
+}
+
+#total .number {
+  font-size: larger;
+  font-weight: 600;
+  color: orange;
+}
+@media screen and (max-width: 990px) {
+  #total article {
+    margin-right: 1em;
+    margin-left: 1em;
+    margin-top: 1em;
+  }
+
+  #total {
+    width: 100%;
+  }
+  #total article {
+    width: 30%;
+    height: 100%;
+  }
+}
