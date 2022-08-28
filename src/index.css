@@ -108,6 +108,11 @@ button {
   align-items: center;
 }
 
+.show {
+  display: block !important;
+  transition: var(--transition);
+}
+
 /*-----------responsive title -----------*/
 @media screen and (max-width: 990px) {
   .title-services h1 {

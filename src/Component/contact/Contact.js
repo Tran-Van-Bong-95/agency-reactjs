@@ -31,7 +31,7 @@ function Contact() {
               />
               <div className='row'>
                 {' '}
-                <div class='mb-3'>
+                <div className='mb-3'>
                   <input
                     type='email'
                     className='col me-1'
@@ -51,7 +51,7 @@ function Contact() {
 
               <div className='mb-3'>
                 <textarea
-                  class='form-control'
+                  className='form-control'
                   id='exampleFormControlTextarea1'
                   rows='3'
                   placeholder='Please Enter Your Message'
