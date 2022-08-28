@@ -1,12 +1,15 @@
 #total {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
   background: url('../../image-for-exercise/others/1920x700x1.jpg') center/cover
     no-repeat;
 }
 
+#total section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: unset;
+}
 #total article {
   width: 20%;
   display: flex;

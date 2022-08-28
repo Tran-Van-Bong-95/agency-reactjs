@@ -1,0 +1,21 @@
+#freequency-question {
+  background-color: white;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media screen and (max-width: 990px) {
+  .title-services {
+    padding: 0 0.5em;
+  }
+
+  #freequency-question .content {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  #freequency-question .content article > div p {
+    width: 80%;
+  }
+}

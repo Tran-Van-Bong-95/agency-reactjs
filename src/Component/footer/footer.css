@@ -3,9 +3,10 @@
   padding-right: 1em;
   padding-left: 1em;
 }
-#footer > div {
+#footer section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  background-color: unset;
 }
 
 #footer article {

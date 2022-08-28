@@ -2,8 +2,8 @@ import React from 'react'
 import './services.css'
 function OurServices() {
   return (
-    <div className='container-fluid'>
-      <section id='services'>
+    <div className='container-fluid' id='services'>
+      <section>
         <div className='title-services'>
           <h1>OUR SERVICES</h1>
           <div className='underline-services'>

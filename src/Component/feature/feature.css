@@ -1,34 +1,37 @@
 #feature {
-  background-color: white;
+  background-color: white !important;
 }
-#feature .main-content {
+
+#feature > section {
+  background-color: unset;
+}
+#feature > section > div:nth-child(2) {
   display: flex;
   justify-content: space-around;
   align-items: stretch;
   padding: 3em 0;
-  max-width: 90%;
 }
 
-#feature .main-content article .title h5 {
+#feature article .title h5 {
   text-align: left;
   color: black;
   font-size: larger;
   font-weight: 500;
 }
 
-#feature .main-content article {
+#feature article {
   padding: 1em 0;
 }
 
-#feature .main-content article .content {
+#feature article .content {
   display: flex;
 }
 
-#feature .main-content article .content .image {
+#feature article .content .image {
   margin-right: 20px;
 }
 
-#feature .main-content article .describe p {
+#feature article .describe p {
   text-align: left;
   width: 100%;
 }

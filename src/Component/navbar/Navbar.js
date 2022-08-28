@@ -40,10 +40,6 @@ function Navbar() {
       setScrollHeight(window.pageYOffset)
     })
 
-    // const navbarWidth =
-    //   navbar.current.parentElement.parentElement.parentElement.parentElement.getBoundingClientRect()
-    //     .width
-
     if (scrollHeight > 10) {
       navbar.current.classList.add('navfixed')
       // btnOpen.current.classList.add('show')

@@ -1,130 +1,125 @@
-import { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import './gallery.css'
 import { BsPlusCircle } from 'react-icons/bs'
 import gallery from './data'
-
-// --------------------------------
-import 'slick-carousel/slick/slick.css'
-import 'slick-carousel/slick/slick-theme.css'
-import Slider from 'react-slick'
-
-//-------------------------------
-let settings = {
-  dots: true,
-  infinite: true,
-  speed: 800,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-}
-
-//------------------------------
+import Carousel from 'react-bootstrap/Carousel'
+import Modal from 'react-bootstrap/Modal'
+import Button from 'react-bootstrap/Button'
 
 function Gallery() {
   const [allGallery, setAllGallery] = useState(gallery)
   const [openModal, setOpenModal] = useState(false)
-  const handleClick = (e) => {
-    e.preventDefault()
-    console.log(e.target.textContent)
-    setAllGallery(
-      gallery.filter((item) => item.catergory == e.target.textContent)
-    )
 
-    if (e.target.textContent === 'all') {
-      setAllGallery(gallery)
-    }
+  const values = [true]
+  const [fullscreen, setFullscreen] = useState(true)
+  const [show, setShow] = useState(false)
+
+  function handleShow(breakpoint) {
+    setFullscreen(breakpoint)
+    setShow(true)
   }
 
+  const [order, setOrder] = useState('')
+
+  function handleClick(x) {
+    setOrder(x)
+  }
   //  HP W US CL
   return (
-    <section id='gallery'>
-      <div className='title-services'>
-        <h1>OUR GALLERY</h1>
-        <div className='underline-services'>
-          <span style={{ width: '65px' }}></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span style={{ width: '65px' }}></span>
+    <div className='container-fluid' id='gallery'>
+      <section>
+        <div className='title-services'>
+          <h1>OUR GALLERY</h1>
+          <div className='underline-services'>
+            <span style={{ width: '65px' }}></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span style={{ width: '65px' }}></span>
+          </div>
         </div>
-      </div>
 
-      <div className='choices'>
-        {['all', ...new Set(gallery.map((item) => item.catergory))].map(
-          (item, index) => (
-            <button onClick={handleClick} key={index}>
-              {item}
-            </button>
-          )
-        )}
-      </div>
-      <div className='main'>
-        {allGallery.map((item, index) => {
-          const { image, category } = item
-          return (
-            <article key={index}>
-              <div className='image'>
-                <img src={image} alt={category} />
+        <div className='choices'>
+          {['all', ...new Set(gallery.map((item) => item.catergory))].map(
+            (item, index) => (
+              <button onClick={handleClick} key={index}>
+                {item}
+              </button>
+            )
+          )}
+        </div>
+        <div className='main'>
+          {allGallery.map((item, index) => {
+            const { image, category } = item
+            return (
+              <article key={index}>
+                <div className='image'>
+                  <img src={image} alt={category} />
 
-                <button onClick={() => setOpenModal(true)}>
-                  <span>
-                    <BsPlusCircle className='plus-icon' />
-                  </span>
-                </button>
-              </div>
-              {openModal && (
-                <div id='fixedContain'>
-                  <Slider {...settings} className='styleforSlider'>
-                    {gallery.slice(1, 6).map((item, index) => {
-                      const { image } = item
+                  <Button
+                    key={index}
+                    className='me-2 mb-2'
+                    onClick={() => handleShow(true)}
+                  >
+                    <span onClick={() => handleClick(index + 1)}>
+                      <BsPlusCircle className='plus-icon' />
+                    </span>
+                  </Button>
+                </div>
 
-                      return (
-                        <article
-                          key={index}
-                          style={{
-                            width: '100%',
-                            height: '100%',
-                            margin: '0 auto',
-                            position: 'absolute',
-                            top: '30%',
-                            left: '50%',
-                            transform: 'translate(-50%, -30%)',
-                          }}
-                        >
-                          <div>
+                <Modal
+                  show={show}
+                  fullscreen={fullscreen}
+                  onHide={() => setShow(false)}
+                  style={{
+                    width: '100vw',
+                    height: '100vh',
+                    zIndex: '999999',
+                  }}
+                >
+                  <Modal.Body
+                    style={{
+                      backgroundColor: 'rgba(92, 90, 90, 0.738)',
+                      height: '80vh',
+                    }}
+                  >
+                    <Modal.Header closeButton>
+                      <Modal.Title className='text-white'>gallery</Modal.Title>
+                    </Modal.Header>
+                    <Carousel>
+                      {[
+                        ...gallery.slice(order - 1),
+                        ...gallery.slice(0, order - 1),
+                      ].map((item, index) => {
+                        const { image } = item
+                        // setOrder(index)
+                        return (
+                          <Carousel.Item key={index}>
                             <img
                               src={image}
                               style={{
-                                width: '100%',
-                                height: '80vh',
-                                objectFit: 'contain',
-                                marginTop: '10%',
+                                display: 'block',
+                                width: '100vmin',
+                                height: '70vmin',
+                                margin: '3em auto',
+                                marginTop: '0',
                               }}
                             />
-                          </div>
-                        </article>
-                      )
-                    })}
-                  </Slider>
-                  <button
-                    style={{
-                      position: 'absolute',
-                      top: '5%',
-                      right: '5%',
-                    }}
-                    onClick={() => setOpenModal(!openModal)}
-                  >
-                    X
-                  </button>
-                </div>
-              )}
-            </article>
-          )
-        })}
-      </div>
-    </section>
+                          </Carousel.Item>
+                        )
+                      })}
+                    </Carousel>
+                  </Modal.Body>
+                </Modal>
+              </article>
+            )
+          })}
+        </div>
+      </section>
+    </div>
   )
 }
 

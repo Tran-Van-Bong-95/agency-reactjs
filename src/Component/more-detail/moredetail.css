@@ -1,5 +1,5 @@
 #more-detail {
-  padding: 6em 7em;
+  padding: 6em 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10%;

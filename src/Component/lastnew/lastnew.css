@@ -1,7 +1,11 @@
 #lastnew {
   background-color: var(--clr-white);
+  padding: 0;
 }
 
+#lastnew section {
+  background-color: unset;
+}
 #lastnew .content {
   width: 100%;
   display: flex;
@@ -10,7 +14,7 @@
 }
 
 #lastnew .content article {
-  width: 30%;
+  width: 33%;
   background-color: var(--clr-grey-10);
   text-align: left;
 }

@@ -2,6 +2,9 @@
   background-color: white;
 }
 
+#gallery > section {
+  background-color: unset;
+}
 #gallery .choices {
   width: 100%;
   margin: 0 auto;
@@ -37,6 +40,7 @@
   position: relative;
   transition: var(--transition);
   top: 0;
+  margin: 5px 5px;
 }
 
 #gallery .main article .image {
@@ -75,31 +79,21 @@
   transition: var(--transition);
 }
 
-#fixedContain {
-  width: 100vw;
-  position: fixed;
-  background-color: rgba(169, 165, 165, 0.233);
-  top: 0;
-  left: 0;
-  bottom: 0;
-  z-index: 9999999;
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 4em;
+  height: 4em;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white !important;
+  z-index: 99999;
 }
 
-.styleforSlider {
-  width: 60vw;
-  height: 100%;
+.me-2,
+.mb-2 {
+  border: none;
 }
-
-#fixedContain > div > div {
-  display: absolute;
-  top: 0%;
-  left: 0%;
-  transform: translateX(-20%, -35%);
-}
-
 @media screen and (max-width: 990px) {
   #gallery .main {
     flex-direction: column;
@@ -116,12 +110,4 @@
   #gallery .choices button {
     border: unset;
   }
-
-  .styleforSlider article img {
-    display: block;
-    width: 130%;
-  }
-}
-
-@media screen and (max-width: 990px) {
 }

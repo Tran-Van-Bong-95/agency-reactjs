@@ -4,11 +4,15 @@
   margin: 0 auto;
 }
 
+#transition section {
+  background-color: unset;
+  padding: 0;
+}
 #transition article {
   background-color: #0c0c0ccc;
   padding: 3em 2em;
   color: white;
-  width: 60vw;
+  width: 50%;
   height: 100%;
   font-weight: 600;
   transition: var(--transition);
@@ -33,6 +37,12 @@
 #transition button {
   width: 50px;
   height: 50px;
+}
+
+#transition .carousel-indicators button {
+  width: 15px;
+  height: 15px;
+  background-color: hsl(21, 57%, 50%);
 }
 @media screen and (max-width: 990px) {
   #transition > article {

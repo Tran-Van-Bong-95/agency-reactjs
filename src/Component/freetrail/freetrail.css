@@ -1,11 +1,14 @@
 #free-trail {
   background: url('../../image-for-exercise/others/1920x700x2.jpg') center/cover
     no-repeat;
+}
+
+#free-trail section {
+  background-color: unset;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 #free-trail .content h1 {
   padding: 1em 0;
 }

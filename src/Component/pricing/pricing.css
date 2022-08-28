@@ -55,6 +55,10 @@
   margin-top: 3em;
 }
 
+#pricing button {
+  padding: 10px 20px;
+  border-radius: 5px;
+}
 @media screen and (max-width: 990px) {
   #pricing .show-price {
     flex-direction: column !important ;

@@ -1,30 +1,24 @@
 import './slider.css'
 import React from 'react'
-
 import ImagePerson from './ImagePerson'
 import imagePerson from './data'
-import Slider from 'react-slick'
+import Carousel from 'react-bootstrap/Carousel'
 
-// Import css files
-import 'slick-carousel/slick/slick.css'
-import 'slick-carousel/slick/slick-theme.css'
 function SliderContainer() {
-  let settings = {
-    dots: true,
-    infinite: true,
-    speed: 800,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  }
-
   return (
     <div id='transition'>
       <div className='container-fluid'>
-        <Slider {...settings}>
-          {imagePerson.map((item, index) => {
-            return <ImagePerson {...item} key={index} />
-          })}
-        </Slider>
+        <section>
+          <Carousel>
+            {imagePerson.map((item, index) => {
+              return (
+                <Carousel.Item key={index}>
+                  <ImagePerson {...item} key={index} />
+                </Carousel.Item>
+              )
+            })}
+          </Carousel>
+        </section>
       </div>
     </div>
   )

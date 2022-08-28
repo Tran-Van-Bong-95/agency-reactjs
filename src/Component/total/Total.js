@@ -62,48 +62,52 @@ function Total() {
   }, [])
 
   return (
-    <section id='total'>
-      <article>
-        <span>
-          <img
-            src='http://fourdinos.com/demo/lpf/agency/static/images/64x64x1.png'
-            alt=''
-          />
-        </span>
-        <span className='number'></span>
-        <span className='data'>clients</span>
-      </article>
-      <article>
-        <span>
-          <img
-            src='http://fourdinos.com/demo/lpf/agency/static/images/64x64x2.png'
-            alt=''
-          />
-        </span>
-        <span className='number'></span>
-        <span className='data'>projects</span>
-      </article>
-      <article>
-        <span>
-          <img
-            src='http://fourdinos.com/demo/lpf/agency/static/images/64x64x3.png'
-            alt=''
-          />
-        </span>
-        <span className='number'></span>
-        <span className='data'>likes</span>
-      </article>
-      <article>
-        <span>
-          <img
-            src='http://fourdinos.com/demo/lpf/agency/static/images/64x64x4.png'
-            alt=''
-          />
-        </span>
-        <span className='number'></span>
-        <span className='data'>awards</span>
-      </article>
-    </section>
+    <div className='container-fluid'>
+      <div id='total'>
+        <section>
+          <article>
+            <span>
+              <img
+                src='http://fourdinos.com/demo/lpf/agency/static/images/64x64x1.png'
+                alt=''
+              />
+            </span>
+            <span className='number'></span>
+            <span className='data'>clients</span>
+          </article>
+          <article>
+            <span>
+              <img
+                src='http://fourdinos.com/demo/lpf/agency/static/images/64x64x2.png'
+                alt=''
+              />
+            </span>
+            <span className='number'></span>
+            <span className='data'>projects</span>
+          </article>
+          <article>
+            <span>
+              <img
+                src='http://fourdinos.com/demo/lpf/agency/static/images/64x64x3.png'
+                alt=''
+              />
+            </span>
+            <span className='number'></span>
+            <span className='data'>likes</span>
+          </article>
+          <article>
+            <span>
+              <img
+                src='http://fourdinos.com/demo/lpf/agency/static/images/64x64x4.png'
+                alt=''
+              />
+            </span>
+            <span className='number'></span>
+            <span className='data'>awards</span>
+          </article>
+        </section>
+      </div>
+    </div>
   )
 }
 

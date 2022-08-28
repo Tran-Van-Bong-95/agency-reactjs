@@ -1,8 +1,8 @@
 import './footer.css'
 function Footer() {
   return (
-    <section id='footer'>
-      <div className='container-fluid'>
+    <div className='container-fluid' id='footer'>
+      <section>
         <article className='about-us'>
           <h3>ABOUT US</h3>
           <p>
@@ -113,8 +113,8 @@ function Footer() {
             </button>
           </form>
         </article>
-      </div>
-    </section>
+      </section>
+    </div>
   )
 }
 

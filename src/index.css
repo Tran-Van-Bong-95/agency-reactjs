@@ -61,19 +61,11 @@ body {
 }
 
 section {
-  padding: 5em 6em;
-  /* padding: 6em 0em; */
+  padding: 5em 1em;
   text-align: center;
   background-color: var(--clr-grey-10);
   margin: 0 auto;
-}
-
-@media screen and (max-width: 990px) {
-  section {
-    padding: 5em 1em;
-    /* width: 100vw; */
-    margin: 0 auto;
-  }
+  max-width: 1110px;
 }
 
 button {
@@ -155,44 +147,7 @@ button {
   display: block !important;
   transition: var(--transition);
 }
-/*
-.hide {
-  display: none !important;
-  transition: var(--transition);
-} */
-/*----------services---------------*/
 
-/*----------feature--------- */
-
-/*--------------our mission----------------*/
-
-/*------------gallery-------------*/
-
-/*----------total------------*/
-
-/*-------------information---------*/
-
-/*--------------pricing----------------*/
-
-/*------------skill-set----------*/
-
-/*---------freeTrail----------*/
-
-/*--------freequency question---------*/
-
-/*-------------meet our team ----------*/
-
-/*-------------Organization------------*/
-
-/*---------transition--------*/
-
-/*---------last new -----------*/
-
-/*---------contact----------*/
-
-/*---------foooter-----------*/
-
-/*------newsletter-----*/
 .newsletter form {
   display: flex;
   flex-direction: column;

@@ -3,8 +3,8 @@ import './organization.css'
 import { BsFillArrowRightCircleFill } from 'react-icons/bs'
 function Organization() {
   return (
-    <section id='organization'>
-      <div className='container-fluid'>
+    <div className='container-fluid' id='organization'>
+      <section>
         <div className='content'>
           <h5>SCOPE IMPORTANCE OF BUSINESS</h5>
           <div className='underline_organization'></div>
@@ -26,8 +26,8 @@ function Organization() {
             alt=''
           />
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   )
 }
 

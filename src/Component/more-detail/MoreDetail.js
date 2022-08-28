@@ -1,10 +1,11 @@
+import { findAllByDisplayValue } from '@testing-library/react'
 import React from 'react'
 import './moredetail.css'
 
 function MoreDetail() {
   return (
     <div className='container-fluid'>
-      <div id='more-detail'>
+      <section id='more-detail'>
         <div id='doing'>
           <div id='introduce'>
             <div className='title'>
@@ -59,7 +60,7 @@ function MoreDetail() {
             alt=''
           />
         </div>
-      </div>
+      </section>
     </div>
   )
 }

@@ -1,8 +1,11 @@
 #our-mission {
+  background-color: var(--clr-grey-10);
+}
+
+#our-mission section {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--clr-grey-10);
 }
 
 #our-mission article {

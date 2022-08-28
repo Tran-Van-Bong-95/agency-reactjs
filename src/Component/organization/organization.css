@@ -1,13 +1,10 @@
-#organization > div {
+#organization section {
+  background-color: unset;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: var(--clr-white);
 }
 
-#organization div {
-  padding: 2em 2em;
-}
 #organization .content {
   height: 100%;
   max-width: 50%;
@@ -53,16 +50,4 @@
   color: var(--clr-primary-6);
   float: left;
   width: fit-content;
-}
-
-@media screen and (max-width: 990px) {
-  #organization > div {
-    flex-direction: column-reverse;
-  }
-
-  #organization .content,
-  .image {
-    max-width: none;
-    padding: 0;
-  }
 }

@@ -4,22 +4,22 @@ import { BsFillArrowRightCircleFill } from 'react-icons/bs'
 
 function Lastnew() {
   return (
-    <section id='lastnew'>
-      <div className='title-services'>
-        <h1>OUR LASTED NEWS</h1>
-        <div className='underline-services'>
-          <span style={{ width: '65px' }}></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span style={{ width: '65px' }}></span>
+    <div className='container-fluid' id='lastnew'>
+      <section>
+        <div className='title-services'>
+          <h1>OUR LASTED NEWS</h1>
+          <div className='underline-services'>
+            <span style={{ width: '65px' }}></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span style={{ width: '65px' }}></span>
+          </div>
         </div>
-      </div>
 
-      <div className='container-fluid'>
         <div className='content'>
           <article>
             <div className='image'>
@@ -80,8 +80,8 @@ function Lastnew() {
             </div>
           </article>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   )
 }
 

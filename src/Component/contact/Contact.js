@@ -2,8 +2,8 @@ import React from 'react'
 import './Contact.css'
 function Contact() {
   return (
-    <section id='contact'>
-      <div className='container-fluid'>
+    <div className='container-fluid' id='contact'>
+      <section>
         <div className='content'>
           <div className='image'>
             <img
@@ -27,36 +27,42 @@ function Contact() {
                 placeholder='Enter your name'
                 className='w-100'
               />
-              <div className='row w-100'>
+              <div className='row'>
                 {' '}
-                <input
-                  type='email'
-                  required
-                  placeholder='Enter your email'
-                  className='col'
-                />
-                <input
-                  type='number'
-                  required
-                  placeholder='Enter your number'
-                  className='col'
-                />
+                <div class='mb-3'>
+                  <input
+                    type='email'
+                    className='col me-1'
+                    id='exampleFormControlInput1'
+                    placeholder='Enter your email'
+                  />
+
+                  <input
+                    type='number'
+                    required
+                    placeholder='Enter your number'
+                    className='col'
+                    id='exampleFormControlInput1'
+                  />
+                </div>
               </div>
 
-              <textarea
-                id=''
-                cols='30'
-                rows='10'
-                required
-                placeholder='Please Enter Your Message'
-                style={{ height: '100px' }}
-              ></textarea>
+              <div className='mb-3'>
+                <textarea
+                  class='form-control'
+                  id='exampleFormControlTextarea1'
+                  rows='3'
+                  placeholder='Please Enter Your Message'
+                  required
+                ></textarea>
+              </div>
+
               <button>Submit</button>
             </form>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   )
 }
 
