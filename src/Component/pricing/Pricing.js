@@ -17,7 +17,7 @@ function Pricing() {
           </div>
         </div>
         <div className='container-fluid'>
-          <div className='show-price'>
+          <div className='show-price d-flex w-lg-100 w-90 mx-lg-auto '>
             <article>
               <p className='tille'>BASIC</p>
               <p className='price'>

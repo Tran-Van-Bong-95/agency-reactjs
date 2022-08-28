@@ -24,6 +24,18 @@ function Gallery() {
   function handleClick(x) {
     setOrder(x)
   }
+
+  function setImages(e) {
+    e.preventDefault()
+    console.log(e.target.textContent)
+    setAllGallery(
+      gallery.filter((item) => item.catergory == e.target.textContent)
+    )
+
+    if (e.target.textContent === 'all') {
+      setAllGallery(gallery)
+    }
+  }
   //  HP W US CL
   return (
     <div className='container-fluid' id='gallery'>
@@ -45,7 +57,7 @@ function Gallery() {
         <div className='choices'>
           {['all', ...new Set(gallery.map((item) => item.catergory))].map(
             (item, index) => (
-              <button onClick={handleClick} key={index}>
+              <button onClick={setImages} key={index}>
                 {item}
               </button>
             )

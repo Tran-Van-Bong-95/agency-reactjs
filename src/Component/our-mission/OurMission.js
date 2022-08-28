@@ -3,7 +3,7 @@ import './ourMission.css'
 function OurMission() {
   return (
     <div className='container-fluid' id='our-mission'>
-      <section>
+      <section className='d-flex'>
         <article>
           <div className='title'>
             <h1>OUR MISSION</h1>

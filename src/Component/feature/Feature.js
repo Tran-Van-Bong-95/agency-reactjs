@@ -17,7 +17,7 @@ function Feature() {
             <span style={{ width: '65px' }}></span>
           </div>
         </div>
-        <div className='main-content'>
+        <div className='main-content d-flex'>
           <div className='image'>
             <img
               src='http://fourdinos.com/demo/lpf/agency/static/images/560x560x1.png'

@@ -20,7 +20,7 @@ function Lastnew() {
           </div>
         </div>
 
-        <div className='content'>
+        <div className='content w-100 d-flex'>
           <article>
             <div className='image'>
               <img
@@ -41,10 +41,11 @@ function Lastnew() {
             </div>
           </article>
           <article>
-            <div className='image'>
+            <div className='image w-100'>
               <img
                 src='http://fourdinos.com/demo/lpf/agency/static/images/760x520x3.jpg'
                 alt=''
+                className='w-100 h-100'
               />
             </div>
             <div className='blog'>

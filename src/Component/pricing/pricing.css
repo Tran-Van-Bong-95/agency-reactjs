@@ -5,7 +5,6 @@
 #pricing .show-price {
   display: flex;
   justify-content: space-between;
-  width: 100%;
 }
 
 #pricing article .tille {
@@ -59,11 +58,10 @@
   padding: 10px 20px;
   border-radius: 5px;
 }
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 992px) {
   #pricing .show-price {
     flex-direction: column !important ;
     padding: 0;
-    width: 90%;
     margin: 0 auto;
   }
 

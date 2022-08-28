@@ -5,13 +5,11 @@
 #feature > section {
   background-color: unset;
 }
-
-#feature > section .main-content .image img {
+#feature .main-content > div:nth-child(2) img {
   width: 100%;
-  height: 100%;
+  height: 80%;
 }
 #feature > section > div:nth-child(2) {
-  display: flex;
   justify-content: space-around;
   align-items: stretch;
   padding: 3em 0;

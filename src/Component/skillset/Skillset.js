@@ -26,14 +26,18 @@ function Skillset() {
               <span>90%</span>
             </p>
             <p>
-              <span style={{ width: '90%' }}></span>
+              <span
+                style={{ backgroundColor: 'hsl(21, 57%, 50%)', width: '90%' }}
+              ></span>
             </p>
             <p>
               <span>DESIGN</span>
               <span>80%</span>
             </p>
             <p>
-              <span style={{ width: '80%' }}></span>
+              <span
+                style={{ backgroundColor: 'hsl(21, 57%, 50%)', width: '80%' }}
+              ></span>
             </p>
             <p>
               <span>SUPPORT</span>
@@ -47,7 +51,9 @@ function Skillset() {
               <span>85%</span>
             </p>
             <p>
-              <span style={{ width: '85%' }}></span>
+              <span
+                style={{ backgroundColor: 'hsl(21, 57%, 50%)', width: '85%' }}
+              ></span>
             </p>
           </article>
           <article>

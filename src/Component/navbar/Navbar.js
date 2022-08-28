@@ -51,7 +51,11 @@ function Navbar() {
   // when height change something happen outside
   return (
     <div className='container-fluid'>
-      <nav id='navbar' ref={navbar} className='bg-light'>
+      <nav
+        id='navbar'
+        ref={navbar}
+        className='bg-light mx-auto p-0 d-none w-lg-100'
+      >
         <div className='logo'>
           <img
             src='http://fourdinos.com/demo/lpf/agency/static/images/200x80x1.png'
@@ -60,14 +64,14 @@ function Navbar() {
         </div>
 
         <div
-          className='content'
+          className='content  d-lg-flex'
           ref={containul}
           onClick={(e) => {
             console.log(e.currentTarget)
             e.currentTarget.classList.remove('show')
           }}
         >
-          <ul>
+          <ul className='d-lg-block'>
             <li>
               <a href='#navbar' onClick={handleClick}>
                 HOME
@@ -108,7 +112,7 @@ function Navbar() {
         </div>
 
         <span
-          className='nav-btn'
+          className='nav-btn d-lg-none'
           id='nav-btn'
           ref={btnOpen}
           onClick={() => containul.current.classList.toggle('show')}

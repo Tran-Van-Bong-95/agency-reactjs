@@ -29,17 +29,21 @@
 #footer article {
   text-align: left;
 }
+
 .about-us div {
   display: flex;
   align-items: center;
 }
+
 #footer article .about-us {
   margin: 1em 0;
 }
+
 .about-us div {
   width: 100%;
   justify-content: space-evenly;
 }
+
 #footer article .about-us span {
   margin: 1em 0.5em;
   margin-left: 0;

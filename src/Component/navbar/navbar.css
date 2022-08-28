@@ -1,16 +1,7 @@
-.container-fluid section {
-  padding: 0;
-  margin: 0 auto;
-}
 #navbar {
-  margin: 0 auto;
-  display: none;
   background-color: white !important;
   line-height: 2em;
   transition: var(--transition);
-  width: 1110px;
-  padding: 0;
-  margin: 0 auto;
 }
 
 .navfixed {
@@ -73,19 +64,10 @@
 @media screen and (min-width: 990px) {
   #navbar {
     flex-direction: row;
-    /* justify-content: space-around; */
-    width: 100%;
   }
   .navfixed {
     align-items: center;
     justify-content: space-around;
-  }
-
-  #navbar > div {
-    display: block;
-  }
-  #navbar ul {
-    display: block;
   }
 
   #navbar ul li {
@@ -93,16 +75,8 @@
   }
 
   #navbar .content {
-    display: flex;
     justify-content: flex-end;
     align-items: center;
-    /* padding-right: 2em; */
-  }
-  /* #navbar {
-    display: none !important;
-  } */
-  #navbar .nav-btn {
-    display: none !important;
   }
 
   .navfixed {

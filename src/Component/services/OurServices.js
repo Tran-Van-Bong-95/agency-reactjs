@@ -18,7 +18,7 @@ function OurServices() {
           </div>
         </div>
 
-        <section id='service-content'>
+        <section id='service-content' className='d-flex w-100'>
           <article>
             <div className='title'>
               <h5>SECURITY SERVICES</h5>

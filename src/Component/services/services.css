@@ -3,11 +3,9 @@
   width: 100%;
 }
 #services #service-content {
-  display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 3em 0;
-  width: 100%;
 }
 #services #service-content article {
   width: 25%;
@@ -48,5 +46,8 @@
 
   #services #service-content article .content {
     align-items: unset;
+  }
+  #services #service-content article .content .image {
+    padding-top: 0.5em;
   }
 }
