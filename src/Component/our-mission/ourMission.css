@@ -25,7 +25,7 @@
 }
 .underline {
   border: 3px solid var(--clr-primary-6);
-  width: 10%;
+  width: 20%;
 }
 
 #our-mission article .content {
@@ -41,7 +41,7 @@
 }
 #our-mission article .content .underline-content {
   border: 1px solid rgba(0, 0, 0, 0.642);
-  height: 80px;
+  height: 100px;
   display: block;
   width: 1px;
   margin-right: 20px;
@@ -52,11 +52,11 @@
 }
 
 @media screen and (max-width: 990px), (max-width: 900px) {
-  #our-mission {
+  #our-mission > section {
     flex-direction: column;
   }
 
-  #our-mission > article {
+  #our-mission > section article {
     width: 100%;
     margin: 0 auto;
   }

@@ -51,3 +51,12 @@
   float: left;
   width: fit-content;
 }
+
+@media screen and (max-width: 992px) {
+  #organization section {
+    flex-direction: column;
+  }
+  #organization .content {
+    min-width: 100%;
+  }
+}

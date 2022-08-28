@@ -18,6 +18,7 @@
 #more-detail .describe {
   flex: 1;
   line-height: 1.5em;
+  text-align: left;
 }
 #more-detail #image img {
   width: 100%;

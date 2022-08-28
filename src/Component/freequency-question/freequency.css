@@ -9,10 +9,10 @@
     padding: 0 0.5em;
   }
 
-  #freequency-question .content {
+  #freequency-question .row {
     display: block;
     margin: 0 auto;
-    width: 90%;
+    width: 99%;
   }
 
   #freequency-question .content article > div p {

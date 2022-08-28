@@ -50,70 +50,72 @@ function Navbar() {
 
   // when height change something happen outside
   return (
-    <div id='navbar' ref={navbar} className='bg-light'>
-      <div className='logo'>
-        <img
-          src='http://fourdinos.com/demo/lpf/agency/static/images/200x80x1.png'
-          alt='logo'
-        />
-      </div>
+    <div className='container-fluid'>
+      <nav id='navbar' ref={navbar} className='bg-light'>
+        <div className='logo'>
+          <img
+            src='http://fourdinos.com/demo/lpf/agency/static/images/200x80x1.png'
+            alt='logo'
+          />
+        </div>
 
-      <div
-        className='content'
-        ref={containul}
-        onClick={(e) => {
-          console.log(e.currentTarget)
-          e.currentTarget.classList.remove('show')
-        }}
-      >
-        <ul>
-          <li>
-            <a href='#navbar' onClick={handleClick}>
-              HOME
-            </a>
-          </li>
-          <li>
-            {' '}
-            <a href='#services' onClick={handleClick}>
+        <div
+          className='content'
+          ref={containul}
+          onClick={(e) => {
+            console.log(e.currentTarget)
+            e.currentTarget.classList.remove('show')
+          }}
+        >
+          <ul>
+            <li>
+              <a href='#navbar' onClick={handleClick}>
+                HOME
+              </a>
+            </li>
+            <li>
               {' '}
-              SERVICES
-            </a>
-          </li>
-          <li>
-            <a href='#feature' onClick={handleClick}>
-              {' '}
-              FEATURES
-            </a>
-          </li>
-          <li>
-            <a href='#gallery' onClick={handleClick}>
-              {' '}
-              GALLERY
-            </a>
-          </li>
-          <li>
-            <a href='#pricing' onClick={handleClick}>
-              {' '}
-              PRICING
-            </a>
-          </li>
-          <li>
-            <a href='#contact' onClick={handleClick}>
-              {' '}
-              CONTACT
-            </a>
-          </li>
-        </ul>
-      </div>
+              <a href='#services' onClick={handleClick}>
+                {' '}
+                SERVICES
+              </a>
+            </li>
+            <li>
+              <a href='#feature' onClick={handleClick}>
+                {' '}
+                FEATURES
+              </a>
+            </li>
+            <li>
+              <a href='#gallery' onClick={handleClick}>
+                {' '}
+                GALLERY
+              </a>
+            </li>
+            <li>
+              <a href='#pricing' onClick={handleClick}>
+                {' '}
+                PRICING
+              </a>
+            </li>
+            <li>
+              <a href='#contact' onClick={handleClick}>
+                {' '}
+                CONTACT
+              </a>
+            </li>
+          </ul>
+        </div>
 
-      <span
-        className='nav-btn'
-        id='nav-btn'
-        ref={btnOpen}
-        onClick={() => containul.current.classList.toggle('show')}
-      >
-        <TbLayoutNavbar />
-      </span>
+        <span
+          className='nav-btn'
+          id='nav-btn'
+          ref={btnOpen}
+          onClick={() => containul.current.classList.toggle('show')}
+        >
+          <TbLayoutNavbar />
+        </span>
+      </nav>
     </div>
   )
 }

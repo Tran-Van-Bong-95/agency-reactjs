@@ -12,12 +12,14 @@ function Contact() {
             />
           </div>
           <div className='form'>
-            <span>
-              <img
-                src='http://fourdinos.com/demo/lpf/agency/static/images/64x64x5.png'
-                alt=''
-              />
-            </span>
+            <div>
+              <span>
+                <img
+                  src='http://fourdinos.com/demo/lpf/agency/static/images/64x64x5.png'
+                  alt=''
+                />
+              </span>
+            </div>
 
             <form>
               <label>SEND A MESSAGE</label>
