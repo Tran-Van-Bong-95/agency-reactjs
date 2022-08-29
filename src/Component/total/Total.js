@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './total.css'
 function Total() {
   const [scrollHeight, setScrollHeight] = useState(0)
