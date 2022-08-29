@@ -22,6 +22,7 @@ function Feature() {
             <img
               src='http://fourdinos.com/demo/lpf/agency/static/images/560x560x1.png'
               alt=''
+              className='w-100'
             />
           </div>
           <div>
