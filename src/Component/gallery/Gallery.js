@@ -94,8 +94,8 @@ function Gallery() {
                 >
                   <Modal.Body
                     style={{
-                      backgroundColor: 'rgba(92, 90, 90, 0.738)',
                       height: '80vh',
+                      backgroundColor: 'rgba(141, 135, 135, 0.5)',
                     }}
                   >
                     <Modal.Header closeButton>

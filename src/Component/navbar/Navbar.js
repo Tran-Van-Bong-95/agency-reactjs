@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react'
 import './navbar.css'
 import { TbLayoutNavbar } from 'react-icons/tb'
 import 'bootstrap/dist/css/bootstrap.min.css'
+
 function Navbar() {
   const [scrollHeight, setScrollHeight] = useState(0)
   const containul = useRef(null)
@@ -42,13 +43,11 @@ function Navbar() {
 
     if (scrollHeight > 10) {
       navbar.current.classList.add('navfixed')
-      // btnOpen.current.classList.add('show')
     } else {
       navbar.current.classList.remove('navfixed')
     }
   }, [scrollHeight])
 
-  // when height change something happen outside
   return (
     <div className='container-fluid'>
       <nav
