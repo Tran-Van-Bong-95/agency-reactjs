@@ -1,6 +1,6 @@
 import React from 'react'
 import './skillset.css'
-
+import organazation1 from '../../image-for-exercise/others/760x520x1.jpg'
 function Skillset() {
   return (
     <section id='skill-set'>
@@ -57,10 +57,7 @@ function Skillset() {
             </p>
           </article>
           <article>
-            <img
-              src='http://fourdinos.com/demo/lpf/agency/static/images/760x520x1.jpg'
-              alt=''
-            />
+            <img src={organazation1} alt='' />
           </article>
         </div>
       </div>

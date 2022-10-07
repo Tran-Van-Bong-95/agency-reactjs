@@ -1,5 +1,13 @@
 import React from 'react'
 import './ourteam.css'
+import ourteam1 from '../../image-for-exercise/others/480x600x1.jpg'
+import ourteam2 from '../../image-for-exercise/others/480x600x2.jpg'
+import ourteam3 from '../../image-for-exercise/others/480x600x3.jpg'
+
+import media1 from '../../image-for-exercise/media/32x32x4.png'
+import media2 from '../../image-for-exercise/media/32x32x5.png'
+import media3 from '../../image-for-exercise/media/32x32x6.png'
+import media4 from '../../image-for-exercise/media/32x32x7.png'
 function MeetOurTeam() {
   return (
     <div className='our-team' id='our-team'>
@@ -22,10 +30,7 @@ function MeetOurTeam() {
           <div className='content'>
             <article>
               <div className='image'>
-                <img
-                  src='http://fourdinos.com/demo/lpf/agency/static/images/480x600x1.jpg'
-                  alt=''
-                />
+                <img src={ourteam1} alt='' />
                 <div className='info'>
                   <p className='name'>LOUIS CAROL</p>
                   <p className='position'>Manager</p>
@@ -34,37 +39,22 @@ function MeetOurTeam() {
 
               <div>
                 <span>
-                  <img
-                    src='http://fourdinos.com/demo/lpf/agency/static/images/32x32x4.png'
-                    alt=''
-                  />
+                  <img src={media1} alt='' />
                 </span>
                 <span>
-                  <img
-                    src='http://fourdinos.com/demo/lpf/agency/static/images/32x32x5.png'
-                    alt=''
-                  />
+                  <img src={media2} alt='' />
                 </span>
                 <span>
-                  <img
-                    src='http://fourdinos.com/demo/lpf/agency/static/images/32x32x6.png'
-                    alt=''
-                  />
+                  <img src={media3} alt='' />
                 </span>
                 <span>
-                  <img
-                    src='http://fourdinos.com/demo/lpf/agency/static/images/32x32x7.png'
-                    alt=''
-                  />
+                  <img src={media4} alt='' />
                 </span>
               </div>
             </article>
             <article>
               <div className='image'>
-                <img
-                  src='http://fourdinos.com/demo/lpf/agency/static/images/480x600x2.jpg'
-                  alt=''
-                />
+                <img src={ourteam2} alt='' />
                 <div className='info'>
                   <p className='name'>MARK PETER</p>
                   <p className='position'>Manager</p>
@@ -72,37 +62,22 @@ function MeetOurTeam() {
               </div>
               <div>
                 <span>
-                  <img
-                    src='http://fourdinos.com/demo/lpf/agency/static/images/32x32x4.png'
-                    alt=''
-                  />
+                  <img src={media1} alt='' />
                 </span>
                 <span>
-                  <img
-                    src='http://fourdinos.com/demo/lpf/agency/static/images/32x32x5.png'
-                    alt=''
-                  />
+                  <img src={media2} alt='' />
                 </span>
                 <span>
-                  <img
-                    src='http://fourdinos.com/demo/lpf/agency/static/images/32x32x6.png'
-                    alt=''
-                  />
+                  <img src={media3} alt='' />
                 </span>
                 <span>
-                  <img
-                    src='http://fourdinos.com/demo/lpf/agency/static/images/32x32x7.png'
-                    alt=''
-                  />
+                  <img src={media4} alt='' />
                 </span>
               </div>
             </article>
             <article>
               <div className='image'>
-                <img
-                  src='http://fourdinos.com/demo/lpf/agency/static/images/480x600x3.jpg'
-                  alt=''
-                />
+                <img src={ourteam3} alt='' />
                 <div className='info'>
                   <p className='name'>HENRY JOY</p>
                   <p className='position'>Manager</p>
@@ -110,28 +85,16 @@ function MeetOurTeam() {
               </div>
               <div>
                 <span>
-                  <img
-                    src='http://fourdinos.com/demo/lpf/agency/static/images/32x32x4.png'
-                    alt=''
-                  />
+                  <img src={media1} alt='' />
                 </span>
                 <span>
-                  <img
-                    src='http://fourdinos.com/demo/lpf/agency/static/images/32x32x5.png'
-                    alt=''
-                  />
+                  <img src={media2} alt='' />
                 </span>
                 <span>
-                  <img
-                    src='http://fourdinos.com/demo/lpf/agency/static/images/32x32x6.png'
-                    alt=''
-                  />
+                  <img src={media3} alt='' />
                 </span>
                 <span>
-                  <img
-                    src='http://fourdinos.com/demo/lpf/agency/static/images/32x32x7.png'
-                    alt=''
-                  />
+                  <img src={media4} alt='' />
                 </span>
               </div>
             </article>

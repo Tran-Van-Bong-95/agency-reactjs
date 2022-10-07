@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react'
 import './navbar.css'
 import { TbLayoutNavbar } from 'react-icons/tb'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import logo from '../../image-for-exercise/others/logo.png'
 
 function Navbar() {
   const [scrollHeight, setScrollHeight] = useState(0)
@@ -56,10 +57,7 @@ function Navbar() {
         className='bg-light mx-auto p-0 d-none w-lg-100'
       >
         <div className='logo'>
-          <img
-            src='http://fourdinos.com/demo/lpf/agency/static/images/200x80x1.png'
-            alt='logo'
-          />
+          <img src={logo} alt='logo' />
         </div>
 
         <div

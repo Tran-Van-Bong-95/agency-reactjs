@@ -66,11 +66,11 @@ function Gallery() {
         <div className='main'>
           {allGallery.map((item, index) => {
             const { image, category } = item
+            console.log(image)
             return (
               <article key={index}>
                 <div className='image'>
                   <img src={image} alt={category} />
-
                   <Button
                     key={index}
                     className='me-2 mb-2'
@@ -119,6 +119,7 @@ function Gallery() {
                                 margin: '3em auto',
                                 marginTop: '0',
                               }}
+                              alt=''
                             />
                           </Carousel.Item>
                         )

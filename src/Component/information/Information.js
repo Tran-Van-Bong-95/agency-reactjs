@@ -1,14 +1,11 @@
 import React from 'react'
 import './information.css'
+import imageRepresent from '../../image-for-exercise/others/750x450x1.jpg'
 function Information() {
   return (
     <section id='information' className='d-grid'>
       <div className='image w-100'>
-        <img
-          src='http://fourdinos.com/demo/lpf/agency/static/images/750x450x1.jpg'
-          alt=''
-          className='w-100 h-100'
-        />
+        <img src={imageRepresent} alt='' className='w-100 h-100' />
       </div>
       <div className='content'>
         <div className='title'>

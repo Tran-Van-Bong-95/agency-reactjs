@@ -1,5 +1,11 @@
 import React from 'react'
 import './feature.css'
+import mainImage from '../../image-for-exercise/feature/560x560x1.png'
+import feature1 from '../../image-for-exercise/feature/90x90x1.png'
+import feature2 from '../../image-for-exercise/feature/90x90x2.png'
+import feature3 from '../../image-for-exercise/feature/90x90x3.png'
+import feature4 from '../../image-for-exercise/feature/90x90x4.png'
+
 function Feature() {
   return (
     <div className='container-fluid' id='feature'>
@@ -19,20 +25,13 @@ function Feature() {
         </div>
         <div className='main-content d-flex'>
           <div className='image'>
-            <img
-              src='http://fourdinos.com/demo/lpf/agency/static/images/560x560x1.png'
-              alt=''
-              className='w-100'
-            />
+            <img src={mainImage} alt='' className='w-100' />
           </div>
           <div>
             <article>
               <div className='content'>
                 <div className='image'>
-                  <img
-                    src='http://fourdinos.com/demo/lpf/agency/static/images/90x90x1.png'
-                    alt=''
-                  />
+                  <img src={feature1} alt='' />
                 </div>
                 <div className='describe'>
                   <div className='title'>
@@ -48,10 +47,7 @@ function Feature() {
             <article>
               <div className='content'>
                 <div className='image'>
-                  <img
-                    src='http://fourdinos.com/demo/lpf/agency/static/images/90x90x2.png'
-                    alt=''
-                  />
+                  <img src={feature2} alt='' />
                 </div>
                 <div className='describe'>
                   <div className='title'>
@@ -67,10 +63,7 @@ function Feature() {
             <article>
               <div className='content'>
                 <div className='image'>
-                  <img
-                    src='http://fourdinos.com/demo/lpf/agency/static/images/90x90x3.png'
-                    alt=''
-                  />
+                  <img src={feature3} alt='' />
                 </div>
                 <div className='describe'>
                   <div className='title'>
@@ -86,10 +79,7 @@ function Feature() {
             <article>
               <div className='content'>
                 <div className='image'>
-                  <img
-                    src='http://fourdinos.com/demo/lpf/agency/static/images/90x90x4.png'
-                    alt=''
-                  />
+                  <img src={feature4} alt='' />
                 </div>
                 <div className='describe'>
                   <div className='title'>

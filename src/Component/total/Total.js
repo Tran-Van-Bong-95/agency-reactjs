@@ -1,5 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import './total.css'
+import review1 from '../../image-for-exercise/review/64x64x1.png'
+import review2 from '../../image-for-exercise/review/64x64x2.png'
+import review3 from '../../image-for-exercise/review/64x64x3.png'
+import review4 from '../../image-for-exercise/review/64x64x4.png'
+
 function Total() {
   const [scrollHeight, setScrollHeight] = useState(0)
   function animateNumber(finalNumber, delay, startNumber = 0, callback) {
@@ -67,40 +72,28 @@ function Total() {
         <section>
           <article>
             <span>
-              <img
-                src='http://fourdinos.com/demo/lpf/agency/static/images/64x64x1.png'
-                alt=''
-              />
+              <img src={review1} alt='' />
             </span>
             <span className='number'></span>
             <span className='data'>clients</span>
           </article>
           <article>
             <span>
-              <img
-                src='http://fourdinos.com/demo/lpf/agency/static/images/64x64x2.png'
-                alt=''
-              />
+              <img src={review2} alt='' />
             </span>
             <span className='number'></span>
             <span className='data'>projects</span>
           </article>
           <article>
             <span>
-              <img
-                src='http://fourdinos.com/demo/lpf/agency/static/images/64x64x3.png'
-                alt=''
-              />
+              <img src={review3} alt='' />
             </span>
             <span className='number'></span>
             <span className='data'>likes</span>
           </article>
           <article>
             <span>
-              <img
-                src='http://fourdinos.com/demo/lpf/agency/static/images/64x64x4.png'
-                alt=''
-              />
+              <img src={review4} alt='' />
             </span>
             <span className='number'></span>
             <span className='data'>awards</span>

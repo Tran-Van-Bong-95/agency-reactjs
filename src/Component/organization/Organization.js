@@ -1,6 +1,7 @@
 import React from 'react'
 import './organization.css'
 import { BsFillArrowRightCircleFill } from 'react-icons/bs'
+import image1 from '../../image-for-exercise/others/750x450x2.jpg'
 function Organization() {
   return (
     <div className='container-fluid' id='organization'>
@@ -21,10 +22,7 @@ function Organization() {
           </button>
         </div>
         <div className='image'>
-          <img
-            src='http://fourdinos.com/demo/lpf/agency/static/images/750x450x2.jpg'
-            alt=''
-          />
+          <img src={image1} alt='' />
         </div>
       </section>
     </div>

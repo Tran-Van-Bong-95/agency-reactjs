@@ -1,23 +1,19 @@
 import React from 'react'
 import './Contact.css'
+import contact1 from '../../image-for-exercise/others/760x745.jpg'
+import contact2 from '../../image-for-exercise/others/64x64x5.png'
 function Contact() {
   return (
     <div className='container-fluid' id='contact'>
       <section>
         <div className='content'>
           <div className='image'>
-            <img
-              src='http://fourdinos.com/demo/lpf/agency/static/images/760x745.jpg'
-              alt=''
-            />
+            <img src={contact1} alt='' />
           </div>
           <div className='form'>
             <div>
               <span>
-                <img
-                  src='http://fourdinos.com/demo/lpf/agency/static/images/64x64x5.png'
-                  alt=''
-                />
+                <img src={contact2} alt='' />
               </span>
             </div>
 

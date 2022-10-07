@@ -1,5 +1,12 @@
 import React from 'react'
 import './services.css'
+import service1 from '../../image-for-exercise/services/80x80x1.png'
+import service2 from '../../image-for-exercise/services/80x80x2.png'
+import service3 from '../../image-for-exercise/services/80x80x3.png'
+import service4 from '../../image-for-exercise/services/80x80x4.png'
+import service5 from '../../image-for-exercise/services/80x80x5.png'
+import service6 from '../../image-for-exercise/services/80x80x6.png'
+
 function OurServices() {
   return (
     <div className='container-fluid' id='services'>
@@ -25,10 +32,7 @@ function OurServices() {
             </div>
             <div className='content'>
               <div className='image'>
-                <img
-                  src='http://fourdinos.com/demo/lpf/agency/static/images/80x80x1.png'
-                  alt=''
-                />
+                <img src={service1} alt='' />
               </div>
               <div className='describe'>
                 <p>
@@ -45,10 +49,7 @@ function OurServices() {
             <div className='content'>
               <div className='image'>
                 {' '}
-                <img
-                  src='http://fourdinos.com/demo/lpf/agency/static/images/80x80x2.png'
-                  alt=''
-                />
+                <img src={service2} alt='' />
               </div>
               <div className='describe'>
                 <p>
@@ -64,10 +65,7 @@ function OurServices() {
             </div>
             <div className='content'>
               <div className='image'>
-                <img
-                  src='http://fourdinos.com/demo/lpf/agency/static/images/80x80x3.png'
-                  alt=''
-                />
+                <img src={service3} alt='' />
               </div>
               <div className='describe'>
                 <p>
@@ -83,10 +81,7 @@ function OurServices() {
             </div>
             <div className='content'>
               <div className='image'>
-                <img
-                  src='http://fourdinos.com/demo/lpf/agency/static/images/80x80x4.png'
-                  alt=''
-                />
+                <img src={service4} alt='' />
               </div>
               <div className='describe'>
                 <p>
@@ -102,10 +97,7 @@ function OurServices() {
             </div>
             <div className='content'>
               <div className='image'>
-                <img
-                  src='http://fourdinos.com/demo/lpf/agency/static/images/80x80x5.png'
-                  alt=''
-                />
+                <img src={service5} alt='' />
               </div>
               <div className='describe'>
                 <p>
@@ -121,10 +113,7 @@ function OurServices() {
             </div>
             <div className='content'>
               <div className='image'>
-                <img
-                  src='http://fourdinos.com/demo/lpf/agency/static/images/80x80x6.png'
-                  alt=''
-                />
+                <img src={service6} alt='' />
               </div>
               <div className='describe'>
                 <p>

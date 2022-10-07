@@ -1,6 +1,9 @@
 import React from 'react'
 import './lastnew.css'
 import { BsFillArrowRightCircleFill } from 'react-icons/bs'
+import lastnew1 from '../../image-for-exercise/others/760x520x2.jpg'
+import lastnew2 from '../../image-for-exercise/others/760x520x3.jpg'
+import lastnew3 from '../../image-for-exercise/others/760x520x4.jpg'
 
 function Lastnew() {
   return (
@@ -23,10 +26,7 @@ function Lastnew() {
         <div className='content w-100 d-flex'>
           <article>
             <div className='image'>
-              <img
-                src='http://fourdinos.com/demo/lpf/agency/static/images/760x520x2.jpg'
-                alt=''
-              />
+              <img src={lastnew1} alt='' />
             </div>
             <div className='blog'>
               <div className='time'>25, MAY 2018</div>
@@ -42,11 +42,7 @@ function Lastnew() {
           </article>
           <article>
             <div className='image w-100'>
-              <img
-                src='http://fourdinos.com/demo/lpf/agency/static/images/760x520x3.jpg'
-                alt=''
-                className='w-100 h-100'
-              />
+              <img src={lastnew2} alt='' className='w-100 h-100' />
             </div>
             <div className='blog'>
               <div className='time'>25, APR 2018</div>
@@ -62,10 +58,7 @@ function Lastnew() {
           </article>
           <article>
             <div className='image'>
-              <img
-                src='http://fourdinos.com/demo/lpf/agency/static/images/760x520x4.jpg'
-                alt=''
-              />
+              <img src={lastnew3} alt='' />
             </div>
             <div className='blog'>
               <div className='time'>22, MAR 2018</div>
